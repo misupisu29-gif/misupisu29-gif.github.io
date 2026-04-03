@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="layout.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: #f4f7fb;
+            text-align: center;
+        }
+
+        details {
+            border: 1px solid #c5d0e6;
+            border-radius: 8px;
+            background: #ffffff;
+            margin: 1rem 0;
+            padding: 0.5rem 0.6rem;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+        }
+
+        details summary {
+            font-weight: 700;
+            font-size: 1.05rem;
+            cursor: pointer;
+            outline: none;
+            list-style: none;
+            padding: 0.45rem 0.25rem;
+            transition: color 0.2s ease;
+            color: #1a3347;
+        }
+
+        details summary:hover {
+            color: #0d1f3b;
+        }
+
+        details summary::-webkit-details-marker {
+            display: none;
+        }
+
+        details summary::before {
+            content: "+";
+            font-weight: 700;
+            display: inline-block;
+            width: 1.2rem;
+            text-align: center;
+            margin-right: 0.6rem;
+            color: #2266aa;
+            transition: transform 0.2s ease;
+        }
+
+        details[open] summary::before {
+            content: "–";
+            color: #0b4d8a;
+        }
+
+        details > *:not(summary) {
+            margin-top: 0.6rem;
+            color: #33475a;
+            line-height: 1.7;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="hovedside.html"><img src="logo.png" alt="logografi"></a>
+        <nav>
+            <a href="utstillinger.html">Utstillinger</a> <a href="omvisninger.html">Omvisninger</a> <a href="nettutstillinger.html">Nettutstillinger</a>
+        </nav>
+    </header>
+
+    <h1>Omvisning gjennom museet</h1>
+    <img src="omvisning.jpg" alt="omvisninger">
+    <p>generell info om omvisninger, som hva som blir gått igjennom og hva kan forventes.  lorem ipsum er brukt for å fylle ut nettsiden.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur luctus quis dui laoreet dignissim. Suspendisse dapibus orci in lacus luctus malesuada. Curabitur ultrices, dui pharetra pretium bibendum, felis leo molestie neque, ac consectetur nisl nunc vitae urna. Fusce aliquam nec enim tincidunt hendrerit. </p>
+    <h2>Ofte stilte spørsmål</h2>
+<details>
+  <summary>
+    Når er omvisningene?
+  </summary>
+
+  Svar på spørsmål
+</details>
+
+<details>
+  <summary>
+    Må man betale for omvisningene?
+  </summary>
+
+  Svar på spørsmål
+</details>
+<details>
+  <summary>
+    Hvor ofte er det omvisning?
+  </summary>
+
+  Svar på spørsmål
+</details>
